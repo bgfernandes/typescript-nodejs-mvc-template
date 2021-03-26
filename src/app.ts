@@ -3,10 +3,11 @@ import express from 'express';
 const app = express();
 const port = 3000;
 
-app.get('/', (req, res) => {
+app.get('/', (_req, res) => {
   res.send('Hello World!');
 });
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 app.use((error: any, _req: express.Request, res: express.Response, next: express.NextFunction) => {
   console.error(error);
 
