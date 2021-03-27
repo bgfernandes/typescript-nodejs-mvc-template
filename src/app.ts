@@ -1,10 +1,11 @@
 import express from 'express';
+import config from './config/config';
 
 const app = express();
-const port = 3000;
+const port = config.port;
 
-app.get('/', (_req, res) => {
-  res.send('Hello World!');
+app.get('/', (_req : express.Request, res: express.Response) => {
+  res.send('Hello World! Running on ' + config.env);
 });
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
