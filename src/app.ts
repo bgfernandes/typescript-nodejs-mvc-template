@@ -15,7 +15,7 @@ app.use((error: any, _req: express.Request, res: express.Response, next: express
     return next(error);
   }
 
-  res.status(500).send('INTERNAL SERVER ERROR')
+  res.status(500).send('INTERNAL SERVER ERROR');
 });
 
 app.listen(port, () => {

@@ -18,6 +18,10 @@
         "ignoreRestSiblings": false,
         "argsIgnorePattern": "^_"
       }
+    ],
+    "semi": [
+      "error",
+      "always"
     ]
   }
 }
