@@ -1,11 +1,19 @@
 import express from 'express';
+import nunjucks from 'nunjucks';
 import config from './config/config';
 
 const app = express();
 const port = config.port;
 
+app.engine('html', nunjucks.render);
+app.set('view engine', 'html');
+
+nunjucks.configure(__dirname + '/views', {
+  express: app
+});
+
 app.get('/', (_req : express.Request, res: express.Response) => {
-  res.send('Hello World! Running on ' + config.env);
+  res.render('index.njk', {message: 'Hello World! Running on ' + config.env});
 });
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
