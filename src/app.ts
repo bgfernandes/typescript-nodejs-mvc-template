@@ -3,7 +3,6 @@ import nunjucks from 'nunjucks';
 import config from './config/config';
 
 const app = express();
-const port = config.port;
 
 app.engine('html', nunjucks.render);
 app.set('view engine', 'html');
@@ -27,6 +26,6 @@ app.use((error: any, _req: express.Request, res: express.Response, next: express
   res.status(500).send('INTERNAL SERVER ERROR');
 });
 
-app.listen(port, () => {
-  return console.log(`Server is listening on http://localhost:${port}`);
+app.listen(config.port, () => {
+  return console.log(`Server is listening on http://localhost:${config.port}`);
 });
