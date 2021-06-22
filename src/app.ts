@@ -1,6 +1,5 @@
 import express from 'express';
 import nunjucks from 'nunjucks';
-import config from './config/config';
 import routes from './config/routes';
 
 const app = express();
@@ -25,6 +24,4 @@ app.use((error: any, _req: express.Request, res: express.Response, next: express
   res.status(500).send('INTERNAL SERVER ERROR');
 });
 
-app.listen(config.port, () => {
-  return console.log(`Server is listening on http://localhost:${config.port}`);
-});
+export default app;
