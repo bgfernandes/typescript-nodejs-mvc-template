@@ -1,6 +1,7 @@
 import express from 'express';
 import nunjucks from 'nunjucks';
 import config from './config/config';
+import routes from './config/routes';
 
 const app = express();
 
@@ -11,9 +12,7 @@ nunjucks.configure(__dirname + '/views', {
   express: app
 });
 
-app.get('/', (_req : express.Request, res: express.Response) => {
-  res.render('index.njk', {message: 'Hello World! Running on ' + config.env});
-});
+app.use('/', routes);
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 app.use((error: any, _req: express.Request, res: express.Response, next: express.NextFunction) => {
