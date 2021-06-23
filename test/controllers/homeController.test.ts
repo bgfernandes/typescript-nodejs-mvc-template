@@ -12,6 +12,5 @@ describe('index', () => {
     const response = await request(app).get("/?lang=pt-br");
     expect(response.status).toBe(200);
     expect(response.text).toMatchSnapshot();
-    expect(200).toBe(400);
   });
 });
