@@ -1,0 +1,4 @@
+/* for adding custom css on top of tailwind in the future if needed */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

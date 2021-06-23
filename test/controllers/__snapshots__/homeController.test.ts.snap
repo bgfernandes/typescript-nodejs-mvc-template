@@ -8,6 +8,8 @@ exports[`index renders the index page 1`] = `
     <title>Typescript Node MVC Template</title>
 
     <meta charset=\\"utf-8\\" />
+    <meta name=\\"viewport\\" content=\\"width=device-width, initial-scale=1.0\\" />
+    <link href=\\"/tailwind.css\\" rel=\\"stylesheet\\">
   </head>
 
   <body>
@@ -27,6 +29,8 @@ exports[`index renders the index page localized 1`] = `
     <title>Template MVC com Typescript e Node</title>
 
     <meta charset=\\"utf-8\\" />
+    <meta name=\\"viewport\\" content=\\"width=device-width, initial-scale=1.0\\" />
+    <link href=\\"/tailwind.css\\" rel=\\"stylesheet\\">
   </head>
 
   <body>

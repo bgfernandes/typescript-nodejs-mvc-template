@@ -29,6 +29,8 @@ app.use(cookieParser());
 
 app.use(i18n.init);
 
+app.use(express.static(__dirname + '/public'));
+
 app.use('/', routes);
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
