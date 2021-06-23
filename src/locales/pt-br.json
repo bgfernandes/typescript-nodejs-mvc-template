@@ -1,0 +1,5 @@
+{
+  "layout.title": "Template MVC com Typescript e Node",
+
+  "home.index.greeting %s": "Olá Mundo! Rodando em %s"
+}

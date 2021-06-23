@@ -1,15 +1,33 @@
 import express from 'express';
 import nunjucks from 'nunjucks';
+import i18n from 'i18n';
+import cookieParser from 'cookie-parser';
 import routes from './config/routes';
 
 const app = express();
+
+i18n.configure({
+  locales: ['en', 'pt-br'],
+  queryParameter: 'lang',
+  cookie: 'lang',
+
+  // do not update locale files with new keys not found there
+  // makes no sense since it would update the files in the dist folder instead of src
+  updateFiles: false,
+
+  directory: __dirname + '/locales'
+});
 
 app.engine('html', nunjucks.render);
 app.set('view engine', 'html');
 
 nunjucks.configure(__dirname + '/views', {
   express: app
-});
+}).addGlobal('__', i18n.__);
+
+app.use(cookieParser());
+
+app.use(i18n.init);
 
 app.use('/', routes);
 

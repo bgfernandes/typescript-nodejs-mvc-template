@@ -9,6 +9,7 @@ A template for traditional server-side rendered MVC application using NodeJS and
 - Nunjucks - Javascript templating engine. Picked this one because it supports template inheritance, allowing you to create a rails style "layout" template. Had to do some research to find a templating engine that caters for this in Javascript.
 - Jest - Javscript testing framework.
 - Dotenv - for setting up environment variables more easily.
+- i18n - for localization.
 
 ## Development setup
 Development environment setup:

@@ -6,6 +6,6 @@ dotenv.config({
 });
 
 export default {
-  env: process.env.NODE_ENV,
+  env: process.env.NODE_ENV || 'unknown',
   port: process.env.PORT
 };

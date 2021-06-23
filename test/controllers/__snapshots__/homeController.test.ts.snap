@@ -5,7 +5,7 @@ exports[`index renders the index page 1`] = `
 <!DOCTYPE html>
 <html>
   <head>
-    <title> Typescript Node MVC Template</title>
+    <title>Typescript Node MVC Template</title>
 
     <meta charset=\\"utf-8\\" />
   </head>
@@ -13,6 +13,25 @@ exports[`index renders the index page 1`] = `
   <body>
     
 Hello World! Running on test
+
+  </body>
+</html>
+"
+`;
+
+exports[`index renders the index page localized 1`] = `
+"
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Template MVC com Typescript e Node</title>
+
+    <meta charset=\\"utf-8\\" />
+  </head>
+
+  <body>
+    
+Olá Mundo! Rodando em test
 
   </body>
 </html>
