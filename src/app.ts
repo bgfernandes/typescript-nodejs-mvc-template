@@ -18,7 +18,7 @@ i18n.configure({
   directory: __dirname + '/locales'
 });
 
-app.engine('html', nunjucks.render)
+app.engine('html', nunjucks.render);
 app.set('view engine', 'html');
 
 nunjucks.configure(__dirname + '/views', {
