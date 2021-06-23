@@ -1,8 +1,8 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI
+name: Test & Lint
 
-# Controls when the action will run. 
+# Controls when the action will run.
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
@@ -24,7 +24,7 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-      
+
       - name: Setup Node.js environment
         uses: actions/setup-node@v2.1.5
         #with:
@@ -47,7 +47,7 @@ jobs:
       - name: NPM install
         run:
           npm install
-          
+
       # Runs a set of commands using the runners shell
       - name: Lint and Test
         run: |
