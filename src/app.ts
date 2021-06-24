@@ -4,8 +4,12 @@ import i18n from 'i18n';
 import cookieParser from 'cookie-parser';
 import routes from './config/routes';
 import languageCookie from './middleware/languageCookie';
+import dbInitializer from './config/initializers/dbInitializer';
 
 const app = express();
+
+/* Run all initializers */
+dbInitializer();
 
 i18n.configure({
   locales: ['en', 'pt-br'],
