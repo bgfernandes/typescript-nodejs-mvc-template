@@ -10,6 +10,10 @@
   </head>
 
   <body>
-    {% block content %}{% endblock %}
+    {% include("layout/_header.njk") %}
+
+    <div class="p-3">
+     {% block content %}{% endblock %}
+    </div>
   </body>
 </html>

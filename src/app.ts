@@ -21,9 +21,10 @@ i18n.configure({
 app.engine('html', nunjucks.render);
 app.set('view engine', 'html');
 
-nunjucks.configure(__dirname + '/views', {
-  express: app
-}).addGlobal('__', i18n.__);
+nunjucks.configure(__dirname + '/views', { express: app })
+  .addGlobal('__', i18n.__)
+  .addGlobal('locale', i18n.getLocale())
+  .addGlobal('locales', i18n.getLocales());
 
 app.use(cookieParser());
 
