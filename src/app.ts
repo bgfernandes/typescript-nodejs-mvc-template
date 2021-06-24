@@ -3,6 +3,7 @@ import nunjucks from 'nunjucks';
 import i18n from 'i18n';
 import cookieParser from 'cookie-parser';
 import routes from './config/routes';
+import languageCookie from './middleware/languageCookie';
 
 const app = express();
 
@@ -31,6 +32,8 @@ app.use(cookieParser());
 app.use(i18n.init);
 
 app.use(express.static(__dirname + '/public'));
+
+app.use(languageCookie);
 
 app.use('/', routes);
 
