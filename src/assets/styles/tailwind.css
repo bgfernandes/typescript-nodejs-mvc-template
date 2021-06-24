@@ -1,0 +1,9 @@
+/* for adding custom css on top of tailwind in the future if needed */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Used in views/home/layout/_header.njk for showing the languages dropdown menu  */
+#language-selector:checked ~ #languages-menu {
+  opacity: 1;
+}

@@ -10,6 +10,7 @@ A template for traditional server-side rendered MVC application using NodeJS and
 - Jest - Javscript testing framework.
 - Dotenv - for setting up environment variables more easily.
 - i18n - for localization.
+- TailwindCSS - For styling. It is in use in a few projects at work, but I never got hands on on it and wanted to try it out. Like the philosophy, and it kind of replaces SASS or LESS. Surprised to find out it also includes a CSS preprocessor that can also purge unused CSS from the main tailwind CSS file and make it super small.
 
 ## Development setup
 Development environment setup:
@@ -22,4 +23,4 @@ Run tests:
 1. Run `npm test`.
 
 ## Building for deployment
-To build, run `npm run build`, the output will be in the `dist` folder.
+To build, run `npm run build-prod`, the output will be in the `dist` folder. Run the server in production environment with `NODE_ENV=production node dist/server.js`.

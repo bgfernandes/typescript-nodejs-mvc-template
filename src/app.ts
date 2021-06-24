@@ -3,6 +3,7 @@ import nunjucks from 'nunjucks';
 import i18n from 'i18n';
 import cookieParser from 'cookie-parser';
 import routes from './config/routes';
+import languageCookie from './middleware/languageCookie';
 
 const app = express();
 
@@ -21,13 +22,18 @@ i18n.configure({
 app.engine('html', nunjucks.render);
 app.set('view engine', 'html');
 
-nunjucks.configure(__dirname + '/views', {
-  express: app
-}).addGlobal('__', i18n.__);
+nunjucks.configure(__dirname + '/views', { express: app })
+  .addGlobal('__', i18n.__)
+  .addGlobal('locale', i18n.getLocale())
+  .addGlobal('locales', i18n.getLocales());
 
 app.use(cookieParser());
 
 app.use(i18n.init);
+
+app.use(express.static(__dirname + '/public'));
+
+app.use(languageCookie);
 
 app.use('/', routes);
 
