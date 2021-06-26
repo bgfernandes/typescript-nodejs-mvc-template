@@ -48,8 +48,19 @@ jobs:
         run:
           npm install
 
+      - name: Setup PostgreSQL
+        uses: Harmon758/postgresql-action@v1.0.0
+        with:
+          postgresql user: postgres
+          postgresql password: password
+
       # Runs a set of commands using the runners shell
       - name: Lint and Test
+        env:
+          DB_HOST: 127.0.0.1
+          DB_USER: postgres
+          DB_PASS: password
+          DB_DATABASE: tsnode_ci
         run: |
           npm run lint
           npm run test
