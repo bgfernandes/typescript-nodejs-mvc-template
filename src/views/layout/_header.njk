@@ -1,7 +1,11 @@
 <header class="flex flex-row justify-between border-b p-3">
   {{__('layout.title')}}
 
-  <a href="/users/" class="text-blue-500 capitalize"> {{ __n('users', 2) }} </a>
+  <div>
+    <a href="/" class="text-blue-500 capitalize"> {{ __n('home', 2) }} </a>
+    |
+    <a href="/users/" class="text-blue-500 capitalize"> {{ __n('users', 2) }} </a>
+  </div>
 
   <div class="relative">
     <input type="checkbox" id="language-selector" class="hidden absolute">

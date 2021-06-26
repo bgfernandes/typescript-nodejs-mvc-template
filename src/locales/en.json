@@ -1,6 +1,7 @@
 {
   "layout.title": "Typescript Node MVC Template",
 
+  "home": "home",
   "home.index.greeting %s": "Hello World! Running on %s",
 
   "user": {

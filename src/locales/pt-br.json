@@ -1,6 +1,7 @@
 {
   "layout.title": "Template MVC com Typescript e Node",
 
+  "home": "início",
   "home.index.greeting %s": "Olá Mundo! Rodando em %s",
 
   "user": {
