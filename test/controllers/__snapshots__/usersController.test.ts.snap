@@ -14,10 +14,14 @@ exports[`index renders the index page with no users 1`] = `
 
   <body>
     <header class=\\"flex flex-row justify-between border-b p-3\\">
+  Typescript Node MVC Template
+
   <div>
-    Typescript Node MVC Template
+    <a href=\\"/\\" class=\\"text-blue-500 capitalize\\"> home </a>
+    |
     <a href=\\"/users/\\" class=\\"text-blue-500 capitalize\\"> users </a>
   </div>
+
   <div class=\\"relative\\">
     <input type=\\"checkbox\\" id=\\"language-selector\\" class=\\"hidden absolute\\">
     <label for=\\"language-selector\\" class=\\"flex items-center space-x-1 cursor-pointer\\">
@@ -79,10 +83,14 @@ exports[`index renders the index page with some users 1`] = `
 
   <body>
     <header class=\\"flex flex-row justify-between border-b p-3\\">
+  Typescript Node MVC Template
+
   <div>
-    Typescript Node MVC Template
+    <a href=\\"/\\" class=\\"text-blue-500 capitalize\\"> home </a>
+    |
     <a href=\\"/users/\\" class=\\"text-blue-500 capitalize\\"> users </a>
   </div>
+
   <div class=\\"relative\\">
     <input type=\\"checkbox\\" id=\\"language-selector\\" class=\\"hidden absolute\\">
     <label for=\\"language-selector\\" class=\\"flex items-center space-x-1 cursor-pointer\\">
