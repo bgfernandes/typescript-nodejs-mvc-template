@@ -1,8 +1,8 @@
 <header class="flex flex-row justify-between border-b p-3">
-  <div>
-    {{__('layout.title')}}
-    <a href="/users/" class="text-blue-500 capitalize"> {{ __n('user', 2) }} </a>
-  </div>
+  {{__('layout.title')}}
+
+  <a href="/users/" class="text-blue-500 capitalize"> {{ __n('users', 2) }} </a>
+
   <div class="relative">
     <input type="checkbox" id="language-selector" class="hidden absolute">
     <label for="language-selector" class="flex items-center space-x-1 cursor-pointer">
