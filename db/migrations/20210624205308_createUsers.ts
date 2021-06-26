@@ -5,7 +5,7 @@ export async function up(knex: Knex): Promise<void> {
   return knex.schema
     .createTable('users', function (table) {
       table.bigIncrements('id');
-      table.timestamps();
+      table.timestamps(true, true);
     });
 }
 
