@@ -130,14 +130,14 @@ exports[`index renders the index page with some users 1`] = `
     
       <tr>
         <td class=\\"borde\\">1</td>
-        <td class=\\"border\\">Sun Dec 17 1995 03:24:00 GMT+0800 (Malaysia Time)</td>
-        <td class=\\"border\\">Sun Dec 17 1995 03:24:00 GMT+0800 (Malaysia Time)</td>
+        <td class=\\"border\\">Sun Dec 17 1995 03:24:00 GMT+0000</td>
+        <td class=\\"border\\">Sun Dec 17 1995 03:24:00 GMT+0000</td>
       </tr>
     
       <tr>
         <td class=\\"borde\\">2</td>
-        <td class=\\"border\\">Wed Dec 17 1997 03:24:00 GMT+0800 (Malaysia Time)</td>
-        <td class=\\"border\\">Wed Dec 17 1997 03:24:00 GMT+0800 (Malaysia Time)</td>
+        <td class=\\"border\\">Wed Dec 17 1997 03:24:00 GMT+0000</td>
+        <td class=\\"border\\">Wed Dec 17 1997 03:24:00 GMT+0000</td>
       </tr>
     
   </tbody>
