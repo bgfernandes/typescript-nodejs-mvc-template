@@ -3,8 +3,6 @@ import BaseModel from './BaseModel';
 
 export default class Users extends BaseModel {
   id: number | undefined;
-  created_at: string | undefined;
-  updated_at: string | undefined;
 
   static get tableName():string {
     return 'users';
