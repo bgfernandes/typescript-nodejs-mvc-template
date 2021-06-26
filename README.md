@@ -26,5 +26,5 @@ Development environment setup:
 Run tests:
 1. Run `npm test`.
 
-## Building for deployment
-To build, run `npm run build-prod`, the output will be in the `dist` folder. Run the server in production environment with `NODE_ENV=production node dist/server.js`.
+## Running in production
+Run the server in production environment with `npm run start-prod`.
