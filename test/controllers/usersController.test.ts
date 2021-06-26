@@ -1,0 +1,32 @@
+import request from 'supertest';
+import { Model } from 'objection';
+import app from './../../src/app';
+import User from './../../src/models/User';
+
+afterAll(async () => {
+  await Model.knex().destroy();
+});
+
+describe('index', () => {
+  it('renders the index page with no users', async () => {
+    const response = await request(app).get('/users');
+    expect(response.status).toBe(200);
+    expect(response.text).toMatchSnapshot();
+  });
+
+  it('renders the index page with some users', async () => {
+    await User.query().insert({
+      created_at: new Date('1995-12-17T03:24:00Z').toISOString(),
+      updated_at: new Date('1995-12-17T03:24:00Z').toISOString(),
+    });
+
+    await User.query().insert({
+      created_at: new Date('1997-12-17T03:24:00Z').toISOString(),
+      updated_at: new Date('1997-12-17T03:24:00Z').toISOString(),
+    });
+
+    const response = await request(app).get('/users');
+    expect(response.status).toBe(200);
+    expect(response.text).toMatchSnapshot();
+  });
+});

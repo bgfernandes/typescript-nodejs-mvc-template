@@ -1,5 +1,14 @@
 {
   "layout.title": "Typescript Node MVC Template",
 
-  "home.index.greeting %s": "Hello World! Running on %s"
+  "home": "home",
+  "home.index.greeting %s": "Hello World! Running on %s",
+
+  "user": {
+    "one": "user",
+    "other": "users"
+  },
+  "user.id": "id",
+  "user.created_at": "created at",
+  "user.updated_at": "updated at"
 }

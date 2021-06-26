@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`index renders the index page 1`] = `
+exports[`index renders the index page with no users 1`] = `
 "
 <!DOCTYPE html>
 <html>
@@ -46,7 +46,22 @@ exports[`index renders the index page 1`] = `
 
     <div class=\\"p-3\\">
      
-Hello World! Running on test
+
+<div class=\\"text-2xl capitalize\\"> users </div>
+
+<table class=\\"border-collapse border\\">
+  <thead>
+    <tr>
+      <th class=\\"border capitalize\\">id</th>
+      <th class=\\"border capitalize\\">created at</th>
+      <th class=\\"border capitalize\\">updated at</th>
+    </tr>
+  </thead>
+  <tbody>
+    
+  </tbody>
+</table>
+
 
     </div>
   </body>
@@ -54,12 +69,12 @@ Hello World! Running on test
 "
 `;
 
-exports[`index renders the index page localized 1`] = `
+exports[`index renders the index page with some users 1`] = `
 "
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Template MVC com Typescript e Node</title>
+    <title>Typescript Node MVC Template</title>
 
     <meta charset=\\"utf-8\\" />
     <meta name=\\"viewport\\" content=\\"width=device-width, initial-scale=1.0\\" />
@@ -68,18 +83,18 @@ exports[`index renders the index page localized 1`] = `
 
   <body>
     <header class=\\"flex flex-row justify-between border-b p-3\\">
-  Template MVC com Typescript e Node
+  Typescript Node MVC Template
 
   <div>
-    <a href=\\"/\\" class=\\"text-blue-500 capitalize\\"> início </a>
+    <a href=\\"/\\" class=\\"text-blue-500 capitalize\\"> home </a>
     |
-    <a href=\\"/users/\\" class=\\"text-blue-500 capitalize\\"> usuários </a>
+    <a href=\\"/users/\\" class=\\"text-blue-500 capitalize\\"> users </a>
   </div>
 
   <div class=\\"relative\\">
     <input type=\\"checkbox\\" id=\\"language-selector\\" class=\\"hidden absolute\\">
     <label for=\\"language-selector\\" class=\\"flex items-center space-x-1 cursor-pointer\\">
-      <span>pt-br</span>
+      <span>en</span>
       <svg class=\\"h-4 w-4\\" xmlns=\\"http://www.w3.org/2000/svg\\" fill=\\"none\\" viewBox=\\"0 0 24 24\\" stroke=\\"currentColor\\">
         <path stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\" stroke-width=\\"2\\" d=\\"M19 9l-7 7-7-7\\" />
       </svg>
@@ -100,7 +115,34 @@ exports[`index renders the index page localized 1`] = `
 
     <div class=\\"p-3\\">
      
-Olá Mundo! Rodando em test
+
+<div class=\\"text-2xl capitalize\\"> users </div>
+
+<table class=\\"border-collapse border\\">
+  <thead>
+    <tr>
+      <th class=\\"border capitalize\\">id</th>
+      <th class=\\"border capitalize\\">created at</th>
+      <th class=\\"border capitalize\\">updated at</th>
+    </tr>
+  </thead>
+  <tbody>
+    
+      <tr>
+        <td class=\\"borde\\">1</td>
+        <td class=\\"border\\">Sun Dec 17 1995 03:24:00 GMT+0000</td>
+        <td class=\\"border\\">Sun Dec 17 1995 03:24:00 GMT+0000</td>
+      </tr>
+    
+      <tr>
+        <td class=\\"borde\\">2</td>
+        <td class=\\"border\\">Wed Dec 17 1997 03:24:00 GMT+0000</td>
+        <td class=\\"border\\">Wed Dec 17 1997 03:24:00 GMT+0000</td>
+      </tr>
+    
+  </tbody>
+</table>
+
 
     </div>
   </body>
