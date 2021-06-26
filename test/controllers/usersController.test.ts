@@ -1,6 +1,11 @@
 import request from 'supertest';
+import { Model } from 'objection';
 import app from './../../src/app';
 import User from './../../src/models/User';
+
+afterAll(async () => {
+  await Model.knex().destroy();
+});
 
 describe('index', () => {
   it('renders the index page with no users', async () => {
