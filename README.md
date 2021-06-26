@@ -12,6 +12,7 @@ A template for traditional server-side rendered MVC application using NodeJS and
 - i18n - for localization.
 - TailwindCSS - For styling. It is in use in a few projects at work, but I never got hands on on it and wanted to try it out. Like the philosophy, and it kind of replaces SASS or LESS. Surprised to find out it also includes a CSS preprocessor that can also purge unused CSS from the main tailwind CSS file and make it super small.
 - Objection and Knex: Objection is a lightweight ORM for javascript, and it is built on top of knex, which is a query builder for javascript, but also handles DB connection pool and also provides a rails like DB migrations feature.
+- Moment - for handling date types better than javascript's native Date.
 
 ## Development setup
 Development environment setup:
