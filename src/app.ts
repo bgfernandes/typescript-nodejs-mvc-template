@@ -6,20 +6,17 @@ import routes from './config/routes';
 import languageCookie from './middleware/languageCookie';
 import dbInitializer from './config/initializers/dbInitializer';
 import i18nInitializer from './config/initializers/i18nInitializer';
+import nunjucksInitializer from './config/initializers/nunjucksInitializer';
 
 const app = express();
 
 /* Run all initializers */
 dbInitializer();
 i18nInitializer();
+nunjucksInitializer(app);
 
 app.engine('html', nunjucks.render);
 app.set('view engine', 'html');
-
-nunjucks.configure(__dirname + '/views', { express: app })
-  .addGlobal('__', i18n.__)
-  .addGlobal('locale', i18n.getLocale())
-  .addGlobal('locales', i18n.getLocales());
 
 app.use(cookieParser());
 
