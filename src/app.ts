@@ -22,7 +22,7 @@ app.use(cookieParser());
 
 app.use(i18n.init);
 
-app.use(express.static(__dirname + '/public'));
+app.use(express.static(__dirname + '/../public'));
 
 app.use(languageCookie);
 
