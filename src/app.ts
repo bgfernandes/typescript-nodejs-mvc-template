@@ -5,23 +5,13 @@ import cookieParser from 'cookie-parser';
 import routes from './config/routes';
 import languageCookie from './middleware/languageCookie';
 import dbInitializer from './config/initializers/dbInitializer';
+import i18nInitializer from './config/initializers/i18nInitializer';
 
 const app = express();
 
 /* Run all initializers */
 dbInitializer();
-
-i18n.configure({
-  locales: ['en', 'pt-br'],
-  queryParameter: 'lang',
-  cookie: 'lang',
-
-  // do not update locale files with new keys not found there
-  // makes no sense since it would update the files in the dist folder instead of src
-  updateFiles: false,
-
-  directory: __dirname + '/locales'
-});
+i18nInitializer();
 
 app.engine('html', nunjucks.render);
 app.set('view engine', 'html');
