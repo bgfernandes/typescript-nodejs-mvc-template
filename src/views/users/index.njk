@@ -1,0 +1,26 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+
+<div class="text-2xl capitalize"> {{ __n('user', 2) }} </div>
+
+<table class="border-collapse border">
+  <thead>
+    <tr>
+      <th class="border capitalize">{{ __('user.id') }}</th>
+      <th class="border capitalize">{{ __('user.created_at') }}</th>
+      <th class="border capitalize">{{ __('user.updated_at') }}</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for user in users %}
+      <tr>
+        <td class="borde">{{ user.id }}</td>
+        <td class="border">{{ user.created_at }}</td>
+        <td class="border">{{ user.updated_at }}</td>
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+{% endblock %}
