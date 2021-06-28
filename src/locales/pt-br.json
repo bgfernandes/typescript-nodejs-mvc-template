@@ -10,5 +10,7 @@
   },
   "user.id": "id",
   "user.created_at": "criado em",
-  "user.updated_at": "atualizado em"
+  "user.updated_at": "atualizado em",
+
+  "signup-login": "cadastro / entrar"
 }

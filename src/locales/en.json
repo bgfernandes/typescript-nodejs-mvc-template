@@ -10,5 +10,7 @@
   },
   "user.id": "id",
   "user.created_at": "created at",
-  "user.updated_at": "updated at"
+  "user.updated_at": "updated at",
+
+  "signup-login": "signup / login"
 }
