@@ -15,6 +15,8 @@ export default {
   port: process.env.PORT,
   domain: process.env.DOMAIN,
 
+  session_keys: process.env.SESSION_KEYS ? process.env.SESSION_KEYS.split(',') : [],
+
   db_host: process.env.DB_HOST,
   db_user: process.env.DB_USER,
   db_pass: process.env.DB_PASS,
