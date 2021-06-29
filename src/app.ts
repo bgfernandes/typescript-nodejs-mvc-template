@@ -2,11 +2,13 @@ import express from 'express';
 import nunjucks from 'nunjucks';
 import i18n from 'i18n';
 import cookieParser from 'cookie-parser';
+import passport from 'passport';
 import routes from './config/routes';
 import languageCookie from './middleware/languageCookie';
 import dbInitializer from './config/initializers/dbInitializer';
 import i18nInitializer from './config/initializers/i18nInitializer';
 import nunjucksInitializer from './config/initializers/nunjucksInitializer';
+import passportInitializer from './config/initializers/passportInitializer';
 
 const app = express();
 
@@ -14,6 +16,7 @@ const app = express();
 dbInitializer();
 i18nInitializer();
 nunjucksInitializer(app);
+passportInitializer();
 
 app.engine('html', nunjucks.render);
 app.set('view engine', 'html');
@@ -25,6 +28,8 @@ app.use(i18n.init);
 app.use(express.static(__dirname + '/../public'));
 
 app.use(languageCookie);
+
+app.use(passport.initialize());
 
 app.use('/', routes);
 

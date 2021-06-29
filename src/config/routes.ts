@@ -9,7 +9,7 @@ webRoutes.get('/', homeController.index);
 webRoutes.get('/users', usersController.index);
 
 webRoutes.get('/login', loginController.index);
-webRoutes.post('/login/google', loginController.loginWithGoogle);
+webRoutes.use('/login/google', loginController.googleLoginRouter);
 
 const routes = express.Router();
 routes.use('/', webRoutes);
