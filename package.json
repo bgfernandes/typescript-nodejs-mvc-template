@@ -16,7 +16,8 @@
     "db:setup": "npm run db:create && npm run db:migrate",
     "db:create": "ts-node db/createDatabase.ts",
     "db:drop": "ts-node db/dropDatabase.ts",
-    "db:migrate": "knex migrate:latest"
+    "db:migrate": "knex migrate:latest",
+    "db:migrate:rollback": "knex migrate:rollback"
   },
   "repository": {
     "type": "git",
