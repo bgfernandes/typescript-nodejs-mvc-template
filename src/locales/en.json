@@ -12,5 +12,6 @@
   "user.created_at": "created at",
   "user.updated_at": "updated at",
 
-  "signup-login": "signup / login"
+  "signup-login": "signup / login",
+  "signup-login.google": "login with google"
 }

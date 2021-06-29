@@ -52,7 +52,11 @@ exports[`index renders the index page 1`] = `
     <div class=\\"p-3\\">
      
 
-<div class=\\"text-2xl capitalize\\"> signup / login </div>
+<div class=\\"text-2xl capitalize mb-6\\"> signup / login </div>
+
+<form action=\\"/login/google\\" method=\\"post\\">
+  <input type=\\"submit\\" value=\\"login with google\\" class=\\"capitalize cursor-pointer\\" />
+</form>
 
 
     </div>
