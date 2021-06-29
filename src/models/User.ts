@@ -1,7 +1,7 @@
 import { JSONSchema7 } from 'json-schema';
 import BaseModel from './BaseModel';
 
-export default class Users extends BaseModel {
+export default class User extends BaseModel {
   id: number | undefined;
 
   static get tableName():string {
