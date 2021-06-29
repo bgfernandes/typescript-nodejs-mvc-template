@@ -8,7 +8,7 @@ export const user = Factory.define<User>(({ sequence, onCreate }) => {
   });
 
   return User.fromJson({
-    id: sequence,
+    id: sequence.toString(),
     created_at: moment('2021-06-27T00:00:00Z').toISOString(),
     updated_at: moment('2021-06-27T00:00:00Z').toISOString()
   });

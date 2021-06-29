@@ -2,7 +2,7 @@ import { JSONSchema7 } from 'json-schema';
 import BaseModel from './BaseModel';
 
 export default class User extends BaseModel {
-  id: number | undefined;
+  id: string | undefined;
 
   static get tableName():string {
     return 'users';
@@ -13,7 +13,7 @@ export default class User extends BaseModel {
       type: 'object',
 
       properties: {
-        id: { type: 'integer' },
+        id: { type: 'string' },
         created_at: { type: 'string' },
         updated_at: { type: 'string' }
       }
