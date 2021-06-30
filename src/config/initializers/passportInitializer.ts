@@ -27,7 +27,7 @@ export default function (): void {
     done(null, user.id);
   });
 
-  passport.deserializeUser((id, done) => {
-    User.query().where('id', id).first().then((user) => done(null, user));
+  passport.deserializeUser((id: string, done) => {
+    User.query().findById(id).then((user) => done(null, user));
   });
 }
