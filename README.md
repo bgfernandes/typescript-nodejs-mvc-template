@@ -14,18 +14,49 @@ A template for traditional server-side rendered MVC application using NodeJS and
 - **Objection and Knex** - Objection is a lightweight ORM for javascript, and it is built on top of knex, which is a query builder for javascript, but also handles DB connection pool and also provides a rails like DB migrations feature.
 - **Moment** - for handling date types better than javascript's native Date.
 - **Fishery** - for test factory methods.
+- **Passport JS** - for handling external identity providers.
 
 ## Development setup
 Development environment setup:
 1. Install NodeJS if you haven't already (more info on https://nodejs.org).
 2. Run `npm install` to install dependencies.
 3. Install and run a local Postgres instance. A very easy way to do this is by using docker: `docker run --name postgres -e POSTGRES_PASSWORD=password -p 127.0.0.1:5432:5432 -v /home/<my_local_user>/postgres:/var/lib/postgresql/data -d postgres`. That command will run a docker image with postgres setting the password for the `postgres` user as `password`, running on `127.0.0.1:5432`, and map local folder `/home/<my_local_user>/postgres` to contain all the config and data. More info here: https://hub.docker.com/_/postgres.
-4. Create a `.env` and a `.env.test` file in `src/config` by copying the example files, and update the environment variables if needed. You can set those enviroment variables in any alternative way as well.
-5. Run `npm run db:setup` to create the database and run all the migrations.
-6. Start server in dev mode with `npm start`. To automatically restart the server on changes, use `npm run dev`.
+4. Get a Google web application client ID and secret, follow instructions here for how to do this: https://developers.google.com/identity/sign-in/web/sign-in.
+5. Create a `.env` and a `.env.test` file in `src/config` by copying the example files, and update the environment variables. You can set those enviroment variables in any alternative way as well.
+6. Run `npm run db:setup` to create the database and run all the migrations.
+7. Start server in dev mode with `npm start`. To automatically restart the server on changes, use `npm run dev`.
 
 Run tests:
 1. Run `npm test`.
 
 ## Running in production
 Run the server in production environment with `npm run start-prod`.
+
+## Folder structure
+Quick description of the main **folders** and *files* inside the repo:
+
+- **.github/workflows** - Github workflows that run on automated triggers from github.
+- **db** - Database related info, has some utility scripts to handle DB create/drop/truncate and also:
+  - **migrations** - Knex.js migrations for setting up the DB schema.
+- **src** - The main file with application code.
+  - *app.ts* - Exports the `Express.Application` object. Calls all initializers, adds middleware and also the main router.
+  - *server.ts* - Entry point for serving the application.
+  - **assets** - For storing custom javascript, css and other static assets like fonts/images.
+  - **config** - For setting up the static and enviroment based project configuration.
+    - **initializers** - Scripts that configure and set up libraries.
+    - *routes.ts* - Configures all the routes in the application, mathing to the controllers.
+  - **controllers** - MVC controllers of the application.
+  - **locales** - JSON for the translations, on i18n lib's format.
+  - **middleware** - application wide middleware, as well as route specific middlewares like *neewdsAuth.ts*.
+  - **models** - MVC models for the application, all in the Objection's lib format.
+    - *BaseModel.ts* - The base model class from which all models inherit from.
+  - **views** - Has all the nunjucks view templates used.
+- **test** - Folder with all the jest test suites and some test helpers. The tests for the modules are structured in the same way as inside the **src** folder.
+  - *factories.ts* - Test factories for the models using the Fishery library.
+  - *globalSetup.ts* -  Database chores that run once before all test suites.
+  - *setup.ts* - Database chores that run once before each test case in all the suites.
+  - *testHelpers.ts* - Any helper functions needed for the test suites.
+- **types** - Typescript type definition overrides for external libraries.
+
+
+
