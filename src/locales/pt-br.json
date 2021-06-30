@@ -16,5 +16,7 @@
 
   "signup-login": "cadastro / entrar",
   "signup-login.google": "entrar com google",
-  "signup-login.logout": "sair"
+  "signup-login.logout": "sair",
+
+  "error.unauthorized": "Você precisa estar logado para ver esta página."
 }
