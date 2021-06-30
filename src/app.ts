@@ -11,6 +11,7 @@ import i18nInitializer from './config/initializers/i18nInitializer';
 import nunjucksInitializer from './config/initializers/nunjucksInitializer';
 import passportInitializer from './config/initializers/passportInitializer';
 import config from './config/config';
+import currentUserToLocals from './middleware/currentUserToLocals';
 
 const app = express();
 
@@ -35,6 +36,8 @@ app.use(languageCookie);
 
 app.use(passport.initialize());
 app.use(passport.session());
+
+app.use(currentUserToLocals);
 
 app.use('/', routes);
 

@@ -11,6 +11,7 @@ webRoutes.get('/users/me', usersController.showCurrentUser);
 
 webRoutes.get('/login', loginController.index);
 webRoutes.use('/login/google', loginController.googleLoginRouter);
+webRoutes.use('/login/logout', loginController.logout);
 
 const routes = express.Router();
 routes.use('/', webRoutes);

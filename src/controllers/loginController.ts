@@ -12,3 +12,8 @@ googleLoginRouter.get('/callback', passport.authenticate('google', { failureRedi
 function successfulAuthentication(_req: express.Request, res: express.Response) {
   res.redirect('/');
 }
+
+export function logout(req: express.Request, res: express.Response): void {
+  req.logout();
+  res.redirect('/');
+}

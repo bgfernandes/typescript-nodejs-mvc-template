@@ -26,7 +26,11 @@
       </div>
     </div>
     <div class="ml-5">
-      <a href="/login" class="text-blue-500 capitalize">{{ __('signup-login') }}</a>
+      {% if currentUser %}
+        <a href="/login/logout" class="text-blue-500 capitalize">{{ __('signup-login.logout') }}</a>
+      {% else %}
+        <a href="/login" class="text-blue-500 capitalize">{{ __('signup-login') }}</a>
+      {% endif %}
     </div>
   </div>
 </header>

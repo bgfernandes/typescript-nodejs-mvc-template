@@ -43,7 +43,9 @@ exports[`index renders the index page 1`] = `
       </div>
     </div>
     <div class=\\"ml-5\\">
+      
       <a href=\\"/login\\" class=\\"text-blue-500 capitalize\\">signup / login</a>
+      
     </div>
   </div>
 </header>

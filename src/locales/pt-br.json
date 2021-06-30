@@ -14,5 +14,6 @@
   "user.user-details": "detalhes do usuário",
 
   "signup-login": "cadastro / entrar",
-  "signup-login.google": "entrar com google"
+  "signup-login.google": "entrar com google",
+  "signup-login.logout": "sair"
 }

@@ -14,5 +14,6 @@
   "user.user-details": "user details",
 
   "signup-login": "signup / login",
-  "signup-login.google": "login with google"
+  "signup-login.google": "login with google",
+  "signup-login.logout": "logout"
 }
