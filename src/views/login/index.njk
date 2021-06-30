@@ -1,0 +1,11 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+
+<div class="text-2xl capitalize mb-6"> {{ __('signup-login') }} </div>
+
+<form action="/login/google" method="post">
+  <input type="submit" value="{{__('signup-login.google')}}" class="capitalize cursor-pointer" />
+</form>
+
+{% endblock %}

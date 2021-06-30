@@ -13,4 +13,8 @@ export default class BaseModel extends Model {
     this.created_at = moment(this.created_at).utc();
     this.updated_at = moment(this.updated_at).utc();
   }
+
+  static get modelPaths(): string[] {
+    return [__dirname];
+  }
 }

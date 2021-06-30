@@ -10,5 +10,13 @@
   },
   "user.id": "id",
   "user.created_at": "criado em",
-  "user.updated_at": "atualizado em"
+  "user.updated_at": "atualizado em",
+  "user.user-details": "detalhes do usuário",
+  "user.me": "meu usuário",
+
+  "signup-login": "cadastro / entrar",
+  "signup-login.google": "entrar com google",
+  "signup-login.logout": "sair",
+
+  "error.unauthorized": "Você precisa estar logado para ver esta página."
 }

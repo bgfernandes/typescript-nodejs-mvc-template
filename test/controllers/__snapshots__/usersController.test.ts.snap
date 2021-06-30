@@ -20,25 +20,33 @@ exports[`index renders the index page with no users 1`] = `
     <a href=\\"/\\" class=\\"text-blue-500 capitalize\\"> home </a>
     |
     <a href=\\"/users/\\" class=\\"text-blue-500 capitalize\\"> users </a>
+    
   </div>
 
-  <div class=\\"relative\\">
-    <input type=\\"checkbox\\" id=\\"language-selector\\" class=\\"hidden absolute\\">
-    <label for=\\"language-selector\\" class=\\"flex items-center space-x-1 cursor-pointer\\">
-      <span>en</span>
-      <svg class=\\"h-4 w-4\\" xmlns=\\"http://www.w3.org/2000/svg\\" fill=\\"none\\" viewBox=\\"0 0 24 24\\" stroke=\\"currentColor\\">
-        <path stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\" stroke-width=\\"2\\" d=\\"M19 9l-7 7-7-7\\" />
-      </svg>
-    </label>
+  <div class=\\"flex flex-row\\">
+    <div class=\\"relative\\">
+      <input type=\\"checkbox\\" id=\\"language-selector\\" class=\\"hidden absolute\\">
+      <label for=\\"language-selector\\" class=\\"flex items-center space-x-1 cursor-pointer\\">
+        <span>en</span>
+        <svg class=\\"h-4 w-4\\" xmlns=\\"http://www.w3.org/2000/svg\\" fill=\\"none\\" viewBox=\\"0 0 24 24\\" stroke=\\"currentColor\\">
+          <path stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\" stroke-width=\\"2\\" d=\\"M19 9l-7 7-7-7\\" />
+        </svg>
+      </label>
 
-    <div id=\\"languages-menu\\" class=\\"absolute mt-1 right-1 top-full min-w-max shadow rounded opacity-0 border border-gray-400 transition delay-75 ease-in-out z-10 bg-white\\">
-      <ul class=\\"block text-right\\">
-        
-          <li><a href=\\"?lang=en\\" class=\\"block px-3 py-2\\">en</a></li>
-        
-          <li><a href=\\"?lang=pt-br\\" class=\\"block px-3 py-2\\">pt-br</a></li>
-        
-      </ul>
+      <div id=\\"languages-menu\\" class=\\"absolute mt-1 right-1 top-full min-w-max shadow rounded opacity-0 border border-gray-400 transition delay-75 ease-in-out z-10 bg-white\\">
+        <ul class=\\"block text-right\\">
+          
+            <li><a href=\\"?lang=en\\" class=\\"block px-3 py-2\\">en</a></li>
+          
+            <li><a href=\\"?lang=pt-br\\" class=\\"block px-3 py-2\\">pt-br</a></li>
+          
+        </ul>
+      </div>
+    </div>
+    <div class=\\"ml-5\\">
+      
+        <a href=\\"/login\\" class=\\"text-blue-500 capitalize\\">signup / login</a>
+      
     </div>
   </div>
 </header>
@@ -89,25 +97,33 @@ exports[`index renders the index page with some users 1`] = `
     <a href=\\"/\\" class=\\"text-blue-500 capitalize\\"> home </a>
     |
     <a href=\\"/users/\\" class=\\"text-blue-500 capitalize\\"> users </a>
+    
   </div>
 
-  <div class=\\"relative\\">
-    <input type=\\"checkbox\\" id=\\"language-selector\\" class=\\"hidden absolute\\">
-    <label for=\\"language-selector\\" class=\\"flex items-center space-x-1 cursor-pointer\\">
-      <span>en</span>
-      <svg class=\\"h-4 w-4\\" xmlns=\\"http://www.w3.org/2000/svg\\" fill=\\"none\\" viewBox=\\"0 0 24 24\\" stroke=\\"currentColor\\">
-        <path stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\" stroke-width=\\"2\\" d=\\"M19 9l-7 7-7-7\\" />
-      </svg>
-    </label>
+  <div class=\\"flex flex-row\\">
+    <div class=\\"relative\\">
+      <input type=\\"checkbox\\" id=\\"language-selector\\" class=\\"hidden absolute\\">
+      <label for=\\"language-selector\\" class=\\"flex items-center space-x-1 cursor-pointer\\">
+        <span>en</span>
+        <svg class=\\"h-4 w-4\\" xmlns=\\"http://www.w3.org/2000/svg\\" fill=\\"none\\" viewBox=\\"0 0 24 24\\" stroke=\\"currentColor\\">
+          <path stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\" stroke-width=\\"2\\" d=\\"M19 9l-7 7-7-7\\" />
+        </svg>
+      </label>
 
-    <div id=\\"languages-menu\\" class=\\"absolute mt-1 right-1 top-full min-w-max shadow rounded opacity-0 border border-gray-400 transition delay-75 ease-in-out z-10 bg-white\\">
-      <ul class=\\"block text-right\\">
-        
-          <li><a href=\\"?lang=en\\" class=\\"block px-3 py-2\\">en</a></li>
-        
-          <li><a href=\\"?lang=pt-br\\" class=\\"block px-3 py-2\\">pt-br</a></li>
-        
-      </ul>
+      <div id=\\"languages-menu\\" class=\\"absolute mt-1 right-1 top-full min-w-max shadow rounded opacity-0 border border-gray-400 transition delay-75 ease-in-out z-10 bg-white\\">
+        <ul class=\\"block text-right\\">
+          
+            <li><a href=\\"?lang=en\\" class=\\"block px-3 py-2\\">en</a></li>
+          
+            <li><a href=\\"?lang=pt-br\\" class=\\"block px-3 py-2\\">pt-br</a></li>
+          
+        </ul>
+      </div>
+    </div>
+    <div class=\\"ml-5\\">
+      
+        <a href=\\"/login\\" class=\\"text-blue-500 capitalize\\">signup / login</a>
+      
     </div>
   </div>
 </header>
@@ -141,6 +157,170 @@ exports[`index renders the index page with some users 1`] = `
       </tr>
     
   </tbody>
+</table>
+
+
+    </div>
+  </body>
+</html>
+"
+`;
+
+exports[`showCurrentUser renders error page if no authenticated user 1`] = `
+"
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Typescript Node MVC Template</title>
+
+    <meta charset=\\"utf-8\\" />
+    <meta name=\\"viewport\\" content=\\"width=device-width, initial-scale=1.0\\" />
+    <link href=\\"/tailwind.css\\" rel=\\"stylesheet\\">
+  </head>
+
+  <body>
+    <header class=\\"flex flex-row justify-between border-b p-3\\">
+  Typescript Node MVC Template
+
+  <div>
+    <a href=\\"/\\" class=\\"text-blue-500 capitalize\\"> home </a>
+    |
+    <a href=\\"/users/\\" class=\\"text-blue-500 capitalize\\"> users </a>
+    
+  </div>
+
+  <div class=\\"flex flex-row\\">
+    <div class=\\"relative\\">
+      <input type=\\"checkbox\\" id=\\"language-selector\\" class=\\"hidden absolute\\">
+      <label for=\\"language-selector\\" class=\\"flex items-center space-x-1 cursor-pointer\\">
+        <span>en</span>
+        <svg class=\\"h-4 w-4\\" xmlns=\\"http://www.w3.org/2000/svg\\" fill=\\"none\\" viewBox=\\"0 0 24 24\\" stroke=\\"currentColor\\">
+          <path stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\" stroke-width=\\"2\\" d=\\"M19 9l-7 7-7-7\\" />
+        </svg>
+      </label>
+
+      <div id=\\"languages-menu\\" class=\\"absolute mt-1 right-1 top-full min-w-max shadow rounded opacity-0 border border-gray-400 transition delay-75 ease-in-out z-10 bg-white\\">
+        <ul class=\\"block text-right\\">
+          
+            <li><a href=\\"?lang=en\\" class=\\"block px-3 py-2\\">en</a></li>
+          
+            <li><a href=\\"?lang=pt-br\\" class=\\"block px-3 py-2\\">pt-br</a></li>
+          
+        </ul>
+      </div>
+    </div>
+    <div class=\\"ml-5\\">
+      
+        <a href=\\"/login\\" class=\\"text-blue-500 capitalize\\">signup / login</a>
+      
+    </div>
+  </div>
+</header>
+
+
+    <div class=\\"p-3\\">
+     
+
+<div class=\\"text-2xl capitalize mb-6\\"> error </div>
+
+<p>
+  You need to be logged in to view this page.
+<p>
+
+
+    </div>
+  </body>
+</html>
+"
+`;
+
+exports[`showCurrentUser renders user details page for authenticated user 1`] = `
+"
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Typescript Node MVC Template</title>
+
+    <meta charset=\\"utf-8\\" />
+    <meta name=\\"viewport\\" content=\\"width=device-width, initial-scale=1.0\\" />
+    <link href=\\"/tailwind.css\\" rel=\\"stylesheet\\">
+  </head>
+
+  <body>
+    <header class=\\"flex flex-row justify-between border-b p-3\\">
+  Typescript Node MVC Template
+
+  <div>
+    <a href=\\"/\\" class=\\"text-blue-500 capitalize\\"> home </a>
+    |
+    <a href=\\"/users/\\" class=\\"text-blue-500 capitalize\\"> users </a>
+    
+      |
+      <a href=\\"/users/me\\" class=\\"text-blue-500 capitalize\\"> my details </a>
+    
+  </div>
+
+  <div class=\\"flex flex-row\\">
+    <div class=\\"relative\\">
+      <input type=\\"checkbox\\" id=\\"language-selector\\" class=\\"hidden absolute\\">
+      <label for=\\"language-selector\\" class=\\"flex items-center space-x-1 cursor-pointer\\">
+        <span>en</span>
+        <svg class=\\"h-4 w-4\\" xmlns=\\"http://www.w3.org/2000/svg\\" fill=\\"none\\" viewBox=\\"0 0 24 24\\" stroke=\\"currentColor\\">
+          <path stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\" stroke-width=\\"2\\" d=\\"M19 9l-7 7-7-7\\" />
+        </svg>
+      </label>
+
+      <div id=\\"languages-menu\\" class=\\"absolute mt-1 right-1 top-full min-w-max shadow rounded opacity-0 border border-gray-400 transition delay-75 ease-in-out z-10 bg-white\\">
+        <ul class=\\"block text-right\\">
+          
+            <li><a href=\\"?lang=en\\" class=\\"block px-3 py-2\\">en</a></li>
+          
+            <li><a href=\\"?lang=pt-br\\" class=\\"block px-3 py-2\\">pt-br</a></li>
+          
+        </ul>
+      </div>
+    </div>
+    <div class=\\"ml-5\\">
+      
+        <a href=\\"/login/logout\\" class=\\"text-blue-500 capitalize\\">logout</a>
+      
+    </div>
+  </div>
+</header>
+
+
+    <div class=\\"p-3\\">
+     
+
+<div class=\\"text-2xl capitalize mb-6\\"> user details </div>
+
+<table>
+  <tr>
+    <td class=\\"font-bold\\">
+      id
+    </td>
+    <td>
+      3
+    </td>
+  </tr>
+
+  <tr>
+    <td class=\\"font-bold\\">
+      created at
+    </td>
+    <td>
+      2021-06-27T00:00:00.000Z
+    </td>
+  </tr>
+
+  <tr>
+    <td class=\\"font-bold\\">
+      updated at
+    </td>
+    <td>
+      2021-06-27T00:00:00.000Z
+    </td>
+  </tr>
 </table>
 
 

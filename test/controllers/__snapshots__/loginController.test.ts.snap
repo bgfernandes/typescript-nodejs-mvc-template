@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`index renders the index page 1`] = `
+"
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Typescript Node MVC Template</title>
+
+    <meta charset=\\"utf-8\\" />
+    <meta name=\\"viewport\\" content=\\"width=device-width, initial-scale=1.0\\" />
+    <link href=\\"/tailwind.css\\" rel=\\"stylesheet\\">
+  </head>
+
+  <body>
+    <header class=\\"flex flex-row justify-between border-b p-3\\">
+  Typescript Node MVC Template
+
+  <div>
+    <a href=\\"/\\" class=\\"text-blue-500 capitalize\\"> home </a>
+    |
+    <a href=\\"/users/\\" class=\\"text-blue-500 capitalize\\"> users </a>
+    
+  </div>
+
+  <div class=\\"flex flex-row\\">
+    <div class=\\"relative\\">
+      <input type=\\"checkbox\\" id=\\"language-selector\\" class=\\"hidden absolute\\">
+      <label for=\\"language-selector\\" class=\\"flex items-center space-x-1 cursor-pointer\\">
+        <span>en</span>
+        <svg class=\\"h-4 w-4\\" xmlns=\\"http://www.w3.org/2000/svg\\" fill=\\"none\\" viewBox=\\"0 0 24 24\\" stroke=\\"currentColor\\">
+          <path stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\" stroke-width=\\"2\\" d=\\"M19 9l-7 7-7-7\\" />
+        </svg>
+      </label>
+
+      <div id=\\"languages-menu\\" class=\\"absolute mt-1 right-1 top-full min-w-max shadow rounded opacity-0 border border-gray-400 transition delay-75 ease-in-out z-10 bg-white\\">
+        <ul class=\\"block text-right\\">
+          
+            <li><a href=\\"?lang=en\\" class=\\"block px-3 py-2\\">en</a></li>
+          
+            <li><a href=\\"?lang=pt-br\\" class=\\"block px-3 py-2\\">pt-br</a></li>
+          
+        </ul>
+      </div>
+    </div>
+    <div class=\\"ml-5\\">
+      
+        <a href=\\"/login\\" class=\\"text-blue-500 capitalize\\">signup / login</a>
+      
+    </div>
+  </div>
+</header>
+
+
+    <div class=\\"p-3\\">
+     
+
+<div class=\\"text-2xl capitalize mb-6\\"> signup / login </div>
+
+<form action=\\"/login/google\\" method=\\"post\\">
+  <input type=\\"submit\\" value=\\"login with google\\" class=\\"capitalize cursor-pointer\\" />
+</form>
+
+
+    </div>
+  </body>
+</html>
+"
+`;
