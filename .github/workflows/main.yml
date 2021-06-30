@@ -61,6 +61,7 @@ jobs:
           DB_USER: postgres
           DB_PASS: password
           DB_DATABASE: tsnode_ci
+          SESSION_KEYS: key1,key2
         run: |
           npm run lint
           npm run test
