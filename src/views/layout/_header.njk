@@ -5,6 +5,10 @@
     <a href="/" class="text-blue-500 capitalize"> {{ __n('home', 2) }} </a>
     |
     <a href="/users/" class="text-blue-500 capitalize"> {{ __n('user', 2) }} </a>
+    {% if currentUser %}
+      |
+      <a href="/users/me" class="text-blue-500 capitalize"> {{ __n('user.me', 2) }} </a>
+    {% endif %}
   </div>
 
   <div class="flex flex-row">

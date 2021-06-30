@@ -12,6 +12,7 @@
   "user.created_at": "created at",
   "user.updated_at": "updated at",
   "user.user-details": "user details",
+  "user.me": "my details",
 
   "signup-login": "signup / login",
   "signup-login.google": "login with google",

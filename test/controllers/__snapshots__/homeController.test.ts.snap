@@ -20,6 +20,7 @@ exports[`index renders the index page 1`] = `
     <a href=\\"/\\" class=\\"text-blue-500 capitalize\\"> home </a>
     |
     <a href=\\"/users/\\" class=\\"text-blue-500 capitalize\\"> users </a>
+    
   </div>
 
   <div class=\\"flex flex-row\\">
@@ -44,7 +45,7 @@ exports[`index renders the index page 1`] = `
     </div>
     <div class=\\"ml-5\\">
       
-      <a href=\\"/login\\" class=\\"text-blue-500 capitalize\\">signup / login</a>
+        <a href=\\"/login\\" class=\\"text-blue-500 capitalize\\">signup / login</a>
       
     </div>
   </div>
@@ -81,6 +82,7 @@ exports[`index renders the index page localized 1`] = `
     <a href=\\"/\\" class=\\"text-blue-500 capitalize\\"> início </a>
     |
     <a href=\\"/users/\\" class=\\"text-blue-500 capitalize\\"> usuários </a>
+    
   </div>
 
   <div class=\\"flex flex-row\\">
@@ -105,7 +107,7 @@ exports[`index renders the index page localized 1`] = `
     </div>
     <div class=\\"ml-5\\">
       
-      <a href=\\"/login\\" class=\\"text-blue-500 capitalize\\">cadastro / entrar</a>
+        <a href=\\"/login\\" class=\\"text-blue-500 capitalize\\">cadastro / entrar</a>
       
     </div>
   </div>

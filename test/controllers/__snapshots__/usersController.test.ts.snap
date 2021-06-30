@@ -20,6 +20,7 @@ exports[`index renders the index page with no users 1`] = `
     <a href=\\"/\\" class=\\"text-blue-500 capitalize\\"> home </a>
     |
     <a href=\\"/users/\\" class=\\"text-blue-500 capitalize\\"> users </a>
+    
   </div>
 
   <div class=\\"flex flex-row\\">
@@ -44,7 +45,7 @@ exports[`index renders the index page with no users 1`] = `
     </div>
     <div class=\\"ml-5\\">
       
-      <a href=\\"/login\\" class=\\"text-blue-500 capitalize\\">signup / login</a>
+        <a href=\\"/login\\" class=\\"text-blue-500 capitalize\\">signup / login</a>
       
     </div>
   </div>
@@ -96,6 +97,7 @@ exports[`index renders the index page with some users 1`] = `
     <a href=\\"/\\" class=\\"text-blue-500 capitalize\\"> home </a>
     |
     <a href=\\"/users/\\" class=\\"text-blue-500 capitalize\\"> users </a>
+    
   </div>
 
   <div class=\\"flex flex-row\\">
@@ -120,7 +122,7 @@ exports[`index renders the index page with some users 1`] = `
     </div>
     <div class=\\"ml-5\\">
       
-      <a href=\\"/login\\" class=\\"text-blue-500 capitalize\\">signup / login</a>
+        <a href=\\"/login\\" class=\\"text-blue-500 capitalize\\">signup / login</a>
       
     </div>
   </div>
