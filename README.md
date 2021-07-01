@@ -1,6 +1,18 @@
 # typescript-nodejs-mvc-template
 A template for traditional server-side rendered MVC application using NodeJS and TypeScript.
 
+## Afterword
+I started this project as a way to get back to speed on NodeJS and learn Typescript, but at the same time have a quick template that I could just fork over to use quickly in a new project. I was somewhat influenced by Ruby on Rails and Elixir/Phoenix, and wanted to have something that worked kind of like that.
+
+I did some research on what it seems to be the closest thing to to it, Sails.js, but it looked a little crude so I decided to cobble up something by myself, and started building this by choosing what to use for every different part of the application. The entire approach felt very hackish to me, in the sense that it doesn't feel there is a standard for building Node.js web applications. Some things that I started to take for granted like the ability to have template inheritance that comes out of the box in RoR or Phoenix are actually not that prevalent in Node. That makes me think that this is not the better approach for doing web applications in Node.
+
+I decided to stop here because I don't feel like I would use this to quickstart any new project, I would probably go for RoR instead. This was an interesting learning experiment though. Typescript seems very interesting, I don't think I would start any javascript project in the future without it.
+
+Here is the board that I used to organize the work on this little project's development, as well as some of the things I thought of adding to it, left in the backlog: https://trello.com/b/8F00WMec/typescript-template.
+
+If I do decide to go back into Node.js, I will definetely look into Next.js.
+
+
 ## Library/Tech choices
 - **NodeJS** - Javascript runtime environment.
 - **Typescript** - enhances javascript by adding static types, comes with a precompiler.
@@ -57,6 +69,7 @@ Quick description of the main **folders** and *files* inside the repo:
   - *setup.ts* - Database chores that run once before each test case in all the suites.
   - *testHelpers.ts* - Any helper functions needed for the test suites.
 - **types** - Typescript type definition overrides for external libraries.
+
 
 
 
